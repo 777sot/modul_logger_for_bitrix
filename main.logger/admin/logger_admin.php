@@ -173,6 +173,8 @@ $tabControl->BeginNextTab();
                 "DIR_LOGGER" => '/local/log/',<br>
             ]<br>
         $logger->save($arFields, __METHOD__, __LINE__);<br>
+        App\DebugLogger\Logger::varDump($arFields);<br>
+        App\DebugLogger\Logger::printR($arFields);<br>
                     <h3 style="color:green;">РЕЗУЛЬТАТ ЛОГИРОВАНИЯ :</h3><br>
         *** hmevug9 [2024-03-17 22:27:10.064451 +03:00 Δ- s, 19.92/22.00 MiB] ********************
         *  13
