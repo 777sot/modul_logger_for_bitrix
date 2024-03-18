@@ -1,6 +1,12 @@
 # modul_logger_for_bitrix
 planning module for bitrix24 box
 
+В настройках модуля можно указать :
+  1. Название файла
+  2. Путь от корня сайта (по умолчанию путь - /local/logs/ название файла - debug_logger)
+
+Использовать :
+
                 \Bitrix\Main\Loader::includeModule("main.logger");
 
                 $logger = new App\DebugLogger\Logger();                
@@ -14,7 +20,7 @@ planning module for bitrix24 box
             
         $logger->save($arFields, __METHOD__, __LINE__);
         
-                   РЕЗУЛЬТАТ ЛОГИРОВАНИЯ :
+РЕЗУЛЬТАТ ЛОГИРОВАНИЯ :
                     
         *** hmevug9 [2024-03-17 22:27:10.064451 +03:00 Δ- s, 19.92/22.00 MiB] ********************
         *  13
@@ -25,7 +31,7 @@ planning module for bitrix24 box
             "DIR_LOGGER": "\/local\/log\/"
         }        
 
-           Если прописать в файле init.php : 
+Если прописать в файле init.php : 
           
                 use App\DebugLogger\Logger;
 
@@ -34,9 +40,9 @@ planning module for bitrix24 box
                 }
           
 
-            то можете использовать в любом месте просто вызывая метод 
+то можете использовать в любом месте просто вызывая метод 
             
             $logger->save($arFields, __METHOD__, __LINE__);
             
-            После удаления модуля удалите данные из файла init.php !!!
+После удаления модуля удалите данные из файла init.php !!!
 
