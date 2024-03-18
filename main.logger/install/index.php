@@ -40,7 +40,7 @@ Class main_logger extends CModule
 
             ModuleManager::registerModule($this->MODULE_ID);
 
-            if (!IsModuleInstalled("alexey.mycar")) {
+            if (!IsModuleInstalled("main.logger")) {
                 $this->InstallDB();
                 $this->InstallEvents();
                 $this->InstallFiles();
