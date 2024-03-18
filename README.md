@@ -20,6 +20,10 @@ planning module for bitrix24 box
             
         $logger->save($arFields, __METHOD__, __LINE__);
         
+        App\DebugLogger\Logger::varDump($arFields);
+        
+        App\DebugLogger\Logger::printR($arFields);
+        
 РЕЗУЛЬТАТ ЛОГИРОВАНИЯ :
                     
         *** hmevug9 [2024-03-17 22:27:10.064451 +03:00 Δ- s, 19.92/22.00 MiB] ********************
