@@ -18,7 +18,6 @@ $aMenu = array(
     // иконка
     "icon" => "form_menu_icon",
 );
-// дочерния ветка меню
 
 // дочерния ветка меню
 $aMenu["items"][] =  array(
